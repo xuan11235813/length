@@ -93,7 +93,7 @@ int main()
 	stringstream strin;
 	fin.open("input.txt",ios_base::in);
 	fout.open("output.txt",ios_base::out);
-	fout<<"xuan11235813@gmail.com"<<endl<<endl;
+	fout<<"xuan11235813@gmail.com"<<endl;
 	getline(fin,strline);
 	while(strline.empty()!=1)
 	{
@@ -123,7 +123,7 @@ int main()
 			ope.add_data(ch,chWord,d);
 		}
 		d=ope.get_results();
-		fout<<fixed<<setprecision(2)<<d<<" m"<<endl;
+		fout<<endl<<fixed<<setprecision(2)<<d<<" m";
 		strin.clear();
 		getline(fin,strline);
 	}
